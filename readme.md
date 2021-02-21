@@ -2,7 +2,7 @@
 
 ### Overview of the API
 
-An API which calls https://bpdts-test-app.herokuapp.com/, and returns people who are listed as either living in London, or whose current coordinates are within 50 miles of London.
+An API which calls https://dwp-techtest.herokuapp.com, and returns people who are listed as either living in London, or whose current coordinates are within 50 miles of London.
 
 ## Dependencies
 
@@ -46,15 +46,9 @@ npm start
 ### How to Call API
 
 ```
-http://localhost:4000/people-living-in-london-or-within-50-miles/London
+http://localhost:4000/users/London
 
 returns people who are listed as either living in London, or whose current coordinates are within 50 miles of London.
-
-```
-###  find people by id (optional work will be added later in future)
-
-```
-http://localhost:4000/people-by-id/135 (return user by id)
 
 ```
 

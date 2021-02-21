@@ -1,95 +1,59 @@
 module.exports.usersByCityData = [
-  {
-      "id": 1,
-      "first_name": "Maurise",
-      "last_name": "Shieldon",
-      "email": "mshieldon0@squidoo.com",
-      "ip_address": "192.57.232.111",
-      "latitude": 34.003135,
-      "longitude": -117.7228641
-  },
-  {
-      "id": 2,
-      "first_name": "Bendix",
-      "last_name": "Halgarth",
-      "email": "bhalgarth1@timesonline.co.uk",
-      "ip_address": "4.185.73.82",
-      "latitude": -2.9623869,
-      "longitude": 104.7399789
-  },
-  {
-      "id": 3,
-      "first_name": "Meghan",
-      "last_name": "Southall",
-      "email": "msouthall2@ihg.com",
-      "ip_address": "21.243.184.215",
-      "latitude": "15.45033",
-      "longitude": "44.12768"
-  },
-  {
-      "id": 4,
-      "first_name": "Sidnee",
-      "last_name": "Silwood",
-      "email": "ssilwood3@gizmodo.com",
-      "ip_address": "77.55.231.220",
-      "latitude": -26.94087,
-      "longitude": 29.24905
-  },
-  {
-      "id": 5,
-      "first_name": "Rosita",
-      "last_name": "Ferrulli",
-      "email": "rferrulli4@unesco.org",
-      "ip_address": "182.189.27.66",
-      "latitude": 33.5719791,
-      "longitude": -84.3396421
-  },
-  {
-      "id": 6,
-      "first_name": "Ferdinand",
-      "last_name": "Dun",
-      "email": "fdun5@google.es",
-      "ip_address": "219.245.140.98",
-      "latitude": 47.3879065,
-      "longitude": 19.1150392
-  },
-  {
-      "id": 7,
-      "first_name": "Keven",
-      "last_name": "Paling",
-      "email": "kpaling6@alexa.com",
-      "ip_address": "144.96.77.21",
-      "latitude": 9.9578348,
-      "longitude": 124.1789637
-  },
-  {
-      "id": 8,
-      "first_name": "Carri",
-      "last_name": "Server",
-      "email": "cserver7@google.nl",
-      "ip_address": "222.203.3.67",
-      "latitude": -6.1130137,
-      "longitude": 106.1610343
-  },
-  {
-      "id": 9,
-      "first_name": "Keelia",
-      "last_name": "Gillian",
-      "email": "kgillian8@independent.co.uk",
-      "ip_address": "153.44.232.220",
-      "latitude": 5.9630513,
-      "longitude": 10.1591213
-  },
-  {
-      "id": 10,
-      "first_name": "Brennan",
-      "last_name": "Matej",
-      "email": "bmatej9@umich.edu",
-      "ip_address": "252.214.166.100",
-      "latitude": 41.1086264,
-      "longitude": -7.6901721
-  }
-];
+    {
+      "id": 135,
+      "first_name": "Mechelle",
+      "last_name": "Boam",
+      "email": "mboam3q@thetimes.co.uk",
+      "ip_address": "113.71.242.187",
+      "latitude": -6.5115909,
+      "longitude": 105.652983
+    },
+    {
+      "id": 396,
+      "first_name": "Terry",
+      "last_name": "Stowgill",
+      "email": "tstowgillaz@webeden.co.uk",
+      "ip_address": "143.190.50.240",
+      "latitude": -6.7098551,
+      "longitude": 111.3479498
+    },
+    {
+      "id": 520,
+      "first_name": "Andrew",
+      "last_name": "Seabrocke",
+      "email": "aseabrockeef@indiegogo.com",
+      "ip_address": "28.146.197.176",
+      "latitude": "27.69417",
+      "longitude": "109.73583"
+    },
+    {
+      "id": 658,
+      "first_name": "Stephen",
+      "last_name": "Mapstone",
+      "email": "smapstonei9@bandcamp.com",
+      "ip_address": "187.79.141.124",
+      "latitude": -8.1844859,
+      "longitude": 113.6680747
+    },
+    {
+      "id": 688,
+      "first_name": "Tiffi",
+      "last_name": "Colbertson",
+      "email": "tcolbertsonj3@vimeo.com",
+      "ip_address": "141.49.93.0",
+      "latitude": 37.13,
+      "longitude": -84.08
+    },
+    {
+      "id": 794,
+      "first_name": "Katee",
+      "last_name": "Gopsall",
+      "email": "kgopsallm1@cam.ac.uk",
+      "ip_address": "203.138.133.164",
+      "latitude": 5.7204203,
+      "longitude": 10.901604
+    }
+  ];
 
 module.exports.allUsersData = [
     {
