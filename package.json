@@ -1,0 +1,40 @@
+{
+  "name": "dwp-test-tech",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --exit \"test/**/*.spec.js\"",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "xyz"
+  },
+  "author": "Nathan Maybrey",
+  "license": "ISC",
+  "bugs": {
+    "url": "git+https://github.com/"
+  },
+  "homepage": "xyz",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "dateformat": "^4.5.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "geolib": "^3.3.1",
+    "helmet": "^4.4.1",
+    "lodash": "^4.17.21",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.3.0",
+    "nock": "^13.0.7",
+    "nodemon": "^2.0.7"
+  }
+}
