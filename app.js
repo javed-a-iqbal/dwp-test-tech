@@ -3,7 +3,7 @@ const app = express();
 require('dotenv').config()
 const usersRoutes = require('./routers/routes');
 const PORT = process.env.PORT || '3000'
-const cors = require('cors');
+
 const helmet = require('helmet')
 const a=require('./logger/logger')
 const successLog = require('./logger/logger').successLog;
@@ -11,7 +11,7 @@ const errorLog = require('./logger/logger').errorLog;
 
 app.use('/users', usersRoutes);
 app.use(helmet());
-app.use(cors());
+
 
 const server = app.listen(process.env.PORT || 3000, process.env.IP, function (error) {
     if (error) {
