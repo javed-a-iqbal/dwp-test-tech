@@ -55,8 +55,34 @@ module.exports.usersByCityData = [
     }
   ];
 
-module.exports.allUsersData = [
-    {
+module.exports.allUsersMockData = [
+      {
+        "id": 1,
+        "first_name": "Maurise",
+        "last_name": "Shieldon",
+        "email": "mshieldon0@squidoo.com",
+        "ip_address": "192.57.232.111",
+        "latitude": 34.003135,
+        "longitude": -117.7228641
+      },
+      {
+        "id": 2,
+        "first_name": "Bendix",
+        "last_name": "Halgarth",
+        "email": "bhalgarth1@timesonline.co.uk",
+        "ip_address": "4.185.73.82",
+        "latitude": -2.9623869,
+        "longitude": 104.7399789
+      },
+      {
+        "id": 3,
+        "first_name": "Meghan",
+        "last_name": "Southall",
+        "email": "msouthall2@ihg.com",
+        "ip_address": "21.243.184.215",
+        "latitude": "15.45033",
+        "longitude": "44.12768"
+      },{
         "id": 25,
         "first_name": "Caryl",
         "last_name": "Ruberry",
@@ -136,10 +162,127 @@ module.exports.allUsersData = [
         "ip_address": "117.157.31.19",
         "latitude": 29.813041,
         "longitude": 106.738324
+    },
+    {
+      "id": 104,
+      "first_name": "Alvis",
+      "last_name": "Cadagan",
+      "email": "acadagan2v@xing.com",
+      "ip_address": "116.99.254.168",
+      "latitude": 25.0676256,
+      "longitude": 34.8789697
+    },
+    {
+      "id": 105,
+      "first_name": "Karlik",
+      "last_name": "Matterson",
+      "email": "kmatterson2w@dmoz.org",
+      "ip_address": "137.196.144.47",
+      "latitude": 43.55,
+      "longitude": -116.28
+    },
+    {
+      "id": 106,
+      "first_name": "Lyda",
+      "last_name": "Gwyther",
+      "email": "lgwyther2x@statcounter.com",
+      "ip_address": "19.40.92.84",
+      "latitude": 49.9478668,
+      "longitude": 19.8866771
+    },
+    {
+      "id": 107,
+      "first_name": "Marty",
+      "last_name": "Aldiss",
+      "email": "maldiss2y@delicious.com",
+      "ip_address": "36.21.197.237",
+      "latitude": 51.6891738,
+      "longitude": 94.5646653
+    },
+    {
+      "id": 108,
+      "first_name": "Thomasina",
+      "last_name": "Wisdom",
+      "email": "twisdom2z@loc.gov",
+      "ip_address": "57.105.243.40",
+      "latitude": 9.2828806,
+      "longitude": -83.540208
+    },
+    {
+      "id": 109,
+      "first_name": "Oren",
+      "last_name": "Kerans",
+      "email": "okerans30@chicagotribune.com",
+      "ip_address": "154.168.192.73",
+      "latitude": 56.136002,
+      "longitude": 111.722923
+    },
+    {
+      "id": 110,
+      "first_name": "Osbert",
+      "last_name": "Jahns",
+      "email": "ojahns31@miitbeian.gov.cn",
+      "ip_address": "138.85.38.170",
+      "latitude": 9.7441,
+      "longitude": 125.535149
+    },
+    {
+      "id": 111,
+      "first_name": "Renard",
+      "last_name": "McCarver",
+      "email": "rmccarver32@canalblog.com",
+      "ip_address": "102.105.237.221",
+      "latitude": 8.4286368,
+      "longitude": 124.2876362
+    },
+    {
+      "id": 112,
+      "first_name": "Tiebout",
+      "last_name": "Arlet",
+      "email": "tarlet33@mysql.com",
+      "ip_address": "13.40.195.75",
+      "latitude": 51.6711341,
+      "longitude": 20.1795118
+    },
+    {
+      "id": 113,
+      "first_name": "Fara",
+      "last_name": "Woodger",
+      "email": "fwoodger34@nyu.edu",
+      "ip_address": "13.236.211.197",
+      "latitude": "-8.5643",
+      "longitude": "116.1492"
+    },
+    {
+      "id": 114,
+      "first_name": "Hakim",
+      "last_name": "Addison",
+      "email": "haddison35@about.me",
+      "ip_address": "157.101.145.186",
+      "latitude": 24.488342,
+      "longitude": 110.395104
+    },
+    {
+      "id": 115,
+      "first_name": "Christophorus",
+      "last_name": "Filppetti",
+      "email": "cfilppetti36@google.de",
+      "ip_address": "48.175.47.28",
+      "latitude": 48.892701,
+      "longitude": 2.233089
+    },
+    {
+      "id": 116,
+      "first_name": "Enrika",
+      "last_name": "Grills",
+      "email": "egrills37@moonfruit.com",
+      "ip_address": "203.54.50.84",
+      "latitude": 13.8093174,
+      "longitude": -87.2593454
     }
   ];
 
-  module.exports.noLondonUsersData = [
+  module.exports.outSideLondonUsersData = [
     {
         "id": 97,
         "first_name": "Davidde",
@@ -184,5 +327,14 @@ module.exports.allUsersData = [
         "ip_address": "78.160.13.150",
         "latitude": 41.5979563,
         "longitude": 44.0946881
+    },
+    {
+        "id": 106,
+        "first_name": "Mike",
+        "last_name": "Jackson",
+        "email": "Jackson@foxnews.com",
+        "ip_address": "78.160.13.150",
+        "latitude": 41.59795653,
+        "longitude": 44.0946851
     }
   ];

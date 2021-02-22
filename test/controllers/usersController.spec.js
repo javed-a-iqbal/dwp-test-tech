@@ -55,7 +55,7 @@ describe("usersController.getUsersInGivenDistance", () => {
   it("should return users with in given distance", async () => {
     nock('https://dwp-techtest.herokuapp.com/')
       .get('/users')
-      .reply(200, responseData.allUsersData);
+      .reply(200, responseData.allUsersMockData);
 
       return controller.getUsersInGivenDistance(constants.London, 50)
       .then(result => {
@@ -67,7 +67,7 @@ describe("usersController.getUsersInGivenDistance", () => {
 
     nock('https://dwp-techtest.herokuapp.com/')
       .get('/users')
-      .reply(200, responseData.noLondonUsersData);
+      .reply(200, responseData.outSideLondonUsersData);
     return controller.getUsersInGivenDistance( constants.London, 50)
       .then(result => {
         expect(result).to.have.lengthOf(0);
@@ -80,14 +80,14 @@ describe("usersController.getUsers", () => {
 
     nock('https://dwp-techtest.herokuapp.com/')
       .get('/users')
-      .reply(200, responseData.allUsersData);
+      .reply(200, responseData.allUsersMockData);
 
     nock('https://dwp-techtest.herokuapp.com/')
       .get('/city/London/users')
       .reply(200, responseData.usersByCityData);
 
       chai.request(server)
-        .get('/users/London')
+        .get('/users/people-living-in-london-or-within-50-miles/London')
         .end((error, result) => {
             expect(result.body).to.have.lengthOf(8);
         })
@@ -98,14 +98,14 @@ describe("usersController.getUsers", () => {
 
     nock('https://dwp-techtest.herokuapp.com/')
       .get('/users')
-      .reply(404, responseData.allUsersData);
+      .reply(404, responseData.allUsersMockData);
 
     nock('https://dwp-techtest.herokuapp.com/')
       .get('/city/London/users')
       .reply(200, responseData.usersByCityData);
 
       chai.request(server)
-        .get('/users/London')
+        .get('/users/people-living-in-london-or-within-50-miles/London')
         .end((error, result) => {
           expect(result).to.have.status(200);
           expect(result.body.message).to.contain('404');

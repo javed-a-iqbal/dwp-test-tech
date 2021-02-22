@@ -29,12 +29,11 @@ const getUsers = async (req, res) => {
     const usersByDistance = getUsersInGivenDistance(constants[req.params.city], 50);
     
     const [UsersInLondon, UsersInGivenDistance] = await Promise.all([usersByCity, usersByDistance]);
-    successLog.info("Data retrieved");
-    auditLog.info(`Request has been fulfill for the users with in the london or with in the 50 miles area of london `, { type: "audit", archetype: "CN01", product: "people in London or with in 50 miles", emailId: "xyx@xyz.com",  productType: "api data", "tags": "analytics" });
+    auditLog.info(`Request has been fulfill for the users with in the london or with in the 50 miles area of london `, { type: "audit", archetype: "CN01", product: "people in London or with in 50 miles", emailId: process.env.EMAIL_ADDRESS,  productType: "api data", "tags": "analytics" });
     res.status(200).json(_.union(UsersInLondon.data, UsersInGivenDistance));
   } catch(errors) {
-    errorLog.error("Error during exeution ", { error: errors }); 
-    res.send(errors);
+    errorLog.error("Error during exeution "); 
+    //res.send(errors);
   }
 }
 
