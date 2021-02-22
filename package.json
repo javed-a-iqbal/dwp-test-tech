@@ -6,7 +6,16 @@
   "scripts": {
     "test": "mocha --exit \"test/**/*.spec.js\"",
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "coverage": "nyc --reporter=lcov --repoter=text-lcov npm test",
+    "compliance": "npm run compliance:code && npm run compliance:commit",
+    "compliance:code": "standard",
+    "compliance:commit": "commitlint --from develop --to HEAD",
+    "compliance:markdown": "markdownlint **/*.md --ignore '**/node_modules/**'",
+    "security": "npm run security:audit && npm run security:outdated",
+    "security:audit": "npm audit || true",
+    "security:outdated": "npm outdated || true",
+    "standard:fix": "standard --fix"
   },
   "repository": {
     "type": "git",
@@ -19,8 +28,6 @@
   },
   "homepage": "xyz",
   "dependencies": {
-    "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
     "axios": "^0.21.1",
     "cors": "^2.8.5",
     "dateformat": "^4.5.1",
@@ -28,19 +35,21 @@
     "express": "^4.17.1",
     "geolib": "^3.3.1",
     "helmet": "^4.4.1",
-    "husky": "^5.0.9",
-    "lint-staged": "^10.5.4",
     "lodash": "^4.17.21",
-    "markdownlint-cli": "^0.26.0",
-    "standard": "^16.0.3",
     "winston": "^3.3.3",
     "winston-daily-rotate-file": "^4.5.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "chai": "^4.3.0",
     "chai-http": "^4.3.0",
+    "husky": "^5.1.1",
+    "lint-staged": "^10.5.4",
+    "markdownlint-cli": "^0.26.0",
     "mocha": "^8.3.0",
     "nock": "^13.0.7",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "nyc": "^15.1.0"
   }
 }
