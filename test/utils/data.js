@@ -54,6 +54,16 @@ module.exports.usersByCityData = [
       "longitude": 10.901604
     }
   ];
+  module.exports.userById = [
+    {
+      "id": 1,
+      "first_name": "Maurise",
+      "last_name": "Shieldon",
+      "email": "mshieldon0@squidoo.com",
+      "ip_address": "192.57.232.111",
+      "latitude": 34.003135,
+      "longitude": -117.7228641
+    }];
 
 module.exports.allUsersMockData = [
       {
