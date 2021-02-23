@@ -65,7 +65,7 @@ npm test
 
 
 ```
-For logging we use winston 3.x.x to logs different actions, there are three type of logs, 1 success logs, audit logs  and error logs, when application run it will store logs in a folder mentioned in the .env file, three file will be get created to store logs, and will rotate every day as per current setting.
+For logging we use winston 3.x.x to logs different actions, there are three type of logs, 1 success logs, audit logs  and error logs, when application run it will store logs in a folder mentioned in the .env file, three files will be get created to store logs, and will rotate every day as per current setting.
 
 
 ```
