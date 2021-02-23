@@ -51,6 +51,31 @@ describe("usersController.getDistance", () => {
   })
 });
 
+describe("usersController.userById", () => {
+  it("return sigle user when valid id is passed", async () => {
+    nock('https://dwp-techtest.herokuapp.com/')
+      .get('/user/1')
+      .reply(200, responseData.userById);
+   return controller.userById(1)
+   then((result)=>{
+    expect(result).to.have.lengthOf(1)
+   })
+    
+  })
+
+  it("return no user when invalid id is passed", async () => {
+    nock('https://dwp-techtest.herokuapp.com/')
+      .get('/user/2a')
+      .reply(200, responseData.userById);
+   return controller.userById('2a')
+   then((result)=>{
+    expect(result).to.have.lengthOf(0)
+   })
+    
+  })
+
+});
+
 describe("usersController.getUsersInGivenDistance", () => {
   it("should return users with in given distance", async () => {
     nock('https://dwp-techtest.herokuapp.com/')
@@ -74,6 +99,8 @@ describe("usersController.getUsersInGivenDistance", () => {
       });
   });
 });
+
+
 
 describe("usersController.getUsers", () => {
   it("should return mix array of users when retrieved users", async () => {

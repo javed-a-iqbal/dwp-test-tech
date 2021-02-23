@@ -50,6 +50,10 @@ http://localhost:4000/users/people-living-in-london-or-within-50-miles/London
 
 returns people who are listed as either living in London, or whose current coordinates are within 50 miles of London.
 
+http://localhost:4000/users/user-by-id/7
+
+returns signle user if a valid id is passed
+
 ```
 
 ## Testing

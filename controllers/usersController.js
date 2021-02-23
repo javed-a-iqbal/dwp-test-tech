@@ -11,6 +11,8 @@ const productMessages = require('../common-enum').productMessages
 const getAllUsers = () => axios.get(`${process.env.API_URL}/users`)
 const getUsersOfCity = (city) => axios.get(`${process.env.API_URL}/city/${city}/users`)
 
+const userById = (id) => axios.get(`${process.env.API_URL}/user/${id}`)
+
 const getDistance = (from, to) => {
   const distanceInMetres = geolib.getDistance(from, to)
   return geolib.convertDistance(distanceInMetres, 'mi')
@@ -38,10 +40,23 @@ const getUsers = async (req, res) => {
   }
 }
 
+const getUsersByID = async (req, res) => {
+  const id=req.params.id
+  userById(1).then((data)=>{
+    auditLog.info(productMessages.RequestData.value)
+    auditLog.info(productMessages.RequestDataLondon.value, { type: 'audit', archetype: 'CN01', product: productMessages.productName.value, emailId: process.env.EMAIL_ADDRESS, productType: 'api data', tags: 'analytics' })
+ 
+    res.status(200).json(data.data)
+  })
+
+}
+
 module.exports = {
   getUsers,
   getUsersOfCity,
   getAllUsers,
   getDistance,
-  getUsersInGivenDistance
+  getUsersInGivenDistance,
+  userById,
+  getUsersByID
 }
