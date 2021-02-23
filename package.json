@@ -19,12 +19,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "xyz"
+    "url": "https://github.com/javed-a-iqbal/dwp-test-tech.git"
   },
   "author": "Nathan Maybrey",
   "license": "ISC",
   "bugs": {
-    "url": "git+https://github.com/"
+    "url": "git+https://github.com/javed-a-iqbal/dwp-test-tech.git"
   },
   "homepage": "xyz",
   "dependencies": {
