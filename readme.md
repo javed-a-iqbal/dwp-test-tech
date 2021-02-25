@@ -34,7 +34,10 @@ clone the app
 Setup
 
 ```
+Please rename .env.example to .env file
+
 npm install
+
 ```
 
 Run
